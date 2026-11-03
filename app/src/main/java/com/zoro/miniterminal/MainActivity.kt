@@ -34,8 +34,7 @@ class MainActivity : Activity() {
             text = "ZORO MINI TERMINAL PRO"
             textSize = 20f
             setTextColor(green)
-            typeface = Typeface.MONOSPACE
-            setTypeface(typeface, Typeface.BOLD)
+            setTypeface(Typeface.MONOSPACE, Typeface.BOLD)
             gravity = Gravity.CENTER
         }
         root.addView(title, matchWrap())
@@ -70,7 +69,7 @@ class MainActivity : Activity() {
             setTextColor(Color.WHITE)
             textSize = 15f
             typeface = Typeface.MONOSPACE
-            singleLine = true
+            setSingleLine(true)
             setBackgroundColor(Color.rgb(24, 30, 26))
         }
         root.addView(command, matchWrap())
